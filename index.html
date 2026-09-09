@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Supaya aman dibuka di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Kaylaa </title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        /* =====================================================
+           WARNA UTAMA
+           Kalau mau mengubah warna website,
+           kamu bisa mengubah bagian ini.
+           ===================================================== */
+
+        :root {
+            --purple: #8d62b8;
+            --pink: #e35ba6;
+            --text: #262034;
+            --subtext: #936db7;
+        }
+
+
+        /* =====================================================
+           DASAR WEBSITE
+           ===================================================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            color: var(--text);
+
+            overflow-x: hidden;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #e8d8ff 0%,
+                    #ffe0f0 48%,
+                    #dff7ff 100%
+                );
+        }
+
+
+        /* =====================================================
+           DEKORASI AWAN
+           ===================================================== */
+
+        .cloud {
+            position: fixed;
+
+            background: rgba(255,255,255,0.55);
+
+            border-radius: 100px;
+
+            z-index: -1;
+        }
+
+        .c1 {
+            width: 230px;
+            height: 70px;
+
+            top: 12%;
+            left: -70px;
+        }
+
+        .c2 {
+            width: 260px;
+            height: 80px;
+
+            top: 48%;
+            right: -90px;
+        }
+
+
+        /* =====================================================
+           SPARKLE
+           ===================================================== */
+
+        .sparkle {
+            position: fixed;
+
+            font-size: 22px;
+
+            opacity: 0.6;
+
+            animation:
+                float 4s ease-in-out infinite;
+
+            z-index: 0;
+        }
+
+        .s1 {
+            top: 8%;
+            left: 12%;
+        }
+
+        .s2 {
+            top: 25%;
+            right: 10%;
+
+            animation-delay: 1s;
+        }
+
+        .s3 {
+            top: 72%;
+            left: 7%;
+
+            animation-delay: 2s;
+        }
+
+        .s4 {
+            top: 86%;
+            right: 12%;
+
+            animation-delay: 3s;
+        }
+
+
+        @keyframes float {
+
+            50% {
+                transform:
+                    translateY(-13px)
+                    rotate(8deg);
+
+                opacity: 0.9;
+            }
+
+        }
+
+
+        /* =====================================================
+           SECTION
+           ===================================================== */
+
+        section {
+            min-height: 100svh;
+
+            padding:
+                55px
+                6vw;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .wrap {
+            width: min(900px, 100%);
+        }
+
+
+        /* =====================================================
+           OPENING
+           ===================================================== */
+
+        .hero {
+            text-align: center;
+        }
+
+
+        .cutie {
+            width: 92px;
+            height: 92px;
+
+            margin:
+                0
+                auto
+                18px;
+
+            border-radius: 50%;
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 48px;
+
+            background:
+                rgba(255,255,255,0.65);
+
+            box-shadow:
+                0 12px 35px
+                rgba(116,76,160,0.16);
+
+            border:
+                3px solid
+                rgba(255,255,255,0.8);
+        }
+
+
+        .tag {
+            display: inline-block;
+
+            padding:
+                9px
+                17px;
+
+            border-radius: 999px;
+
+            background:
+                rgba(255,255,255,0.53);
+
+            border:
+                2px solid
+                #fff;
+
+            font-size: 12px;
+
+            font-weight: 600;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =====================================================
+           JUDUL UTAMA
+           ===================================================== */
+
+        h1 {
+
+            font-family:
+                'Pacifico',
+                cursive;
+
+            font-size:
+                clamp(
+                    50px,
+                    13vw,
+                    100px
+                );
+
+            line-height: 1.05;
+
+            margin:
+                18px
+                0
+                15px;
+
+            color:
+                var(--purple);
+
+            text-shadow:
+                3px
+                4px
+                0
+                #fff;
+        }
+
+
+        .hero p {
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            max-width: 620px;
+
+            margin: auto;
+
+            color: #665878;
+        }
+
+
+        /* =====================================================
+           BUTTON
+           ===================================================== */
+
+        .btn {
+
+            border: 0;
+
+            padding:
+                14px
+                23px;
+
+            border-radius: 999px;
+
+            background: #fff;
+
+            color: #7d58a5;
+
+            font:
+                600
+                15px
+                'Fredoka',
+                sans-serif;
+
+            cursor: pointer;
+
+            margin-top: 23px;
+
+            box-shadow:
+                0 9px 22px
+                rgba(102,75,140,0.16);
+
+            transition: 0.2s;
+        }
+
+
+        .btn:hover {
+
+            transform:
+                translateY(-3px)
+                scale(1.02);
+        }
+
+
+        .scroll {
+
+            font-size: 12px;
+
+            margin-top: 24px;
+
+            color: #876f9d;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =====================================================
+           JUDUL SECTION
+           ===================================================== */
+
+        .title {
+
+            text-align: center;
+
+            margin-bottom: 28px;
+        }
+
+
+        .title h2 {
+
+            font-family:
+                'Pacifico',
+                cursive;
+
+            font-size:
+                clamp(
+                    34px,
+                    8vw,
+                    58px
+                );
+
+            color:
+                var(--purple);
+
+            text-shadow:
+                2px
+                3px
+                #fff;
+        }
+
+
+        .title p {
+
+            margin-top: 8px;
+
+            color:
+                var(--subtext);
+        }
+
+
+        /* =====================================================
+           KARTU PESAN
+           ===================================================== */
+
+        .card {
+
+            background:
+                rgba(255,255,255,0.68);
+
+            border:
+                3px solid
+                rgba(255,255,255,0.8);
+
+            border-radius: 30px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 18px 50px
+                rgba(112,73,150,0.14);
+        }
+
+
+        .message {
+
+            font-size: 18px;
+
+            line-height: 1.9;
+        }
+
+
+        .message b {
+
+            color:
+                #d75d9e;
+        }
+
+
+        /* =====================================================
+           GALERI FOTO
+           ===================================================== */
+
+        .gallery {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 16px;
+        }
+
+
+        .photo {
+
+            height: 390px;
+
+            border-radius: 27px;
+
+            overflow: hidden;
+
+            border:
+                4px solid
+                #fff;
+
+            box-shadow:
+                0 13px 35px
+                rgba(112,73,150,0.15);
+
+            position: relative;
+
+            background: #eee;
+        }
+
+
+        .photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s;
+        }
+
+
+        /* Efek ketika foto disentuh / diarahkan mouse */
+
+        .photo:hover img {
+
+            transform:
+                scale(1.05);
+        }
+
+
+        .photo span {
+
+            position: absolute;
+
+            bottom: 12px;
+
+            left: 12px;
+
+            background:
+                rgba(255,255,255,0.88);
+
+            padding:
+                8px
+                12px;
+
+            border-radius: 999px;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           BIRTHDAY WISHES
+           ===================================================== */
+
+        .wishes {
+
+            display: grid;
+
+            gap: 14px;
+        }
+
+
+        .wish {
+
+            display: flex;
+
+            gap: 15px;
+
+            align-items: center;
+
+            background:
+                rgba(255,255,255,0.68);
+
+            border:
+                3px solid
+                #fff;
+
+            border-radius: 23px;
+
+            padding: 18px;
+
+            box-shadow:
+                0 10px 25px
+                rgba(112,73,150,0.1);
+        }
+
+
+        .icon {
+
+            font-size: 29px;
+
+            min-width: 45px;
+
+            text-align: center;
+        }
+
+
+        .wish h3 {
+
+            color:
+                #8056a7;
+
+            margin-bottom: 3px;
+        }
+
+
+        .wish p {
+
+            font-size: 14px;
+
+            line-height: 1.5;
+
+            color:
+                #756983;
+        }
+
+
+        /* =====================================================
+           SECTION TERAKHIR
+           ===================================================== */
+
+        .final {
+
+            text-align: center;
+        }
+
+
+        .final .card {
+
+            padding:
+                42px
+                25px;
+        }
+
+
+        .final h2 {
+
+            font-family:
+                'Pacifico',
+                cursive;
+
+            font-size:
+                clamp(
+                    36px,
+                    9vw,
+                    64px
+                );
+
+            color:
+                var(--pink);
+
+            text-shadow:
+                2px
+                3px
+                #fff;
+        }
+
+
+        .final p {
+
+            margin:
+                16px
+                auto
+                0;
+
+            max-width: 650px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           PESAN RAHASIA
+           ===================================================== */
+
+        #secret {
+
+            display: none;
+
+            margin-top: 18px;
+
+            font-weight: 600;
+
+            color:
+                #b64c91;
+
+            animation:
+                pop 0.5s;
+        }
+
+
+        @keyframes pop {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    scale(0.8);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    scale(1);
+            }
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        footer {
+
+            text-align: center;
+
+            padding: 25px;
+
+            color:
+                #8c789d;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           KHUSUS HP
+           ===================================================== */
+
+        @media (max-width: 600px) {
+
+            section {
+
+                padding:
+                    45px
+                    5vw;
+            }
+
+
+            .gallery {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .photo {
+
+                height: 430px;
+            }
+
+
+            .card {
+
+                padding: 23px;
+            }
+
+
+            .message {
+
+                font-size: 16px;
+            }
+
+
+            .wish {
+
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         DEKORASI
+         ===================================================== -->
+
+    <div class="cloud c1"></div>
+
+    <div class="cloud c2"></div>
+
+    <div class="sparkle s1">✨</div>
+
+    <div class="sparkle s2">🌈</div>
+
+    <div class="sparkle s3">⭐</div>
+
+    <div class="sparkle s4">💖</div>
+
+
+
+    <!-- =====================================================
+         1. OPENING
+         
+         KALAU MAU GANTI JUDUL:
+         EDIT BAGIAN DI SINI
+         ===================================================== -->
+
+    <section class="hero">
+
+        <div class="wrap">
+
+            <div class="cutie">
+                🤪
+            </div>
+
+
+            <div class="tag">
+
+                EAK HABEDE KAELA CIHUY
+
+            </div>
+
+
+            <h1>
+
+                Selamat<br>
+                Habede
+
+            </h1>
+
+
+            <p>
+
+                Haii... Habede ya Kaela semoga kapan kapan kita masih bisa ketemuan 
+                walau udah sejauh ini, sukses ya kuliahnya semoga bisa jdi
+                bussines woman yang keren dh, ntr gw bisa minta 
+                produk bisnisnya kwkkwkw
+
+            </p>
+
+
+            <button
+                class="btn"
+                onclick="surprise()">
+
+                Pencet aja bos
+
+            </button>
+
+
+            <div class="scroll">
+
+                Klo mager pencet ywdh scroll aja 
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         2. UCAPAN
+         
+         KAMU BISA GANTI SEMUA TEKS DI SINI
+         ===================================================== -->
+
+    <section>
+
+        <div class="wrap">
+
+
+            <div class="title">
+
+                <h2>
+                    Duarr... Habede Kayla 
+                    <br> Kesekian Kalinya 
+                </h2>
+
+                <p>
+                    Semoga Fekandra ini bisa selalu bareng ya sampe seterusnya
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+
+                <div class="message">
+
+
+                    Semoga Sehat Selalu yaa
+
+
+                    <br><br>
+
+
+                    Semoga semua hal yang lu pengen bisa terlaksana dengan baik ya....
+
+
+
+                    <br><br>
+
+
+                    Jangan suka nangis tiba tiba tanpa alasan yaa, aman aja kok
+                    cape itu wajar bgt yang ga wajar kan nyerah pas cape wkkwwkwk
+                    semua kuliah pasti berat dan pasti sendiri dlu tanpa temen, tapi gpp
+                    ntr jg pasti dapet temen kok lama lama, aminnn....
+
+
+                    <br><br>
+
+
+                    <b>
+
+                        Satu nama, sejuta tingkah! Hai, aku Kayla! 🤪✨
+
+                    </b>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         3. FOTO
+         
+         GANTI FOTO DI BAGIAN INI
+         
+         Contoh:
+         <img src="foto-baru.jpg">
+         
+         Pastikan foto berada di folder yang sama
+         dengan file index.html.
+         ===================================================== -->
+
+    <section>
+
+        <div class="wrap">
+
+
+            <div class="title">
+
+                <h2>
+                    Foto Kyut
+                </h2>
+
+                <p>
+                    Aib lu gw bongkar di sini anjayyy
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <!-- FOTO 1 -->
+
+                <div class="photo">
+
+                    <img
+                        src="1.jpeg"
+                        alt="Foto 1">
+
+                    <span>
+                        Anjay MMG (Males Mandi Gaes)
+                    </span>
+
+                </div>
+
+
+
+                <!-- FOTO 2 -->
+
+                <div class="photo">
+
+                    <img
+                        src="2.jpeg"
+                        alt="Foto 2">
+
+                    <span>
+                        Si pagi tuh di Sekolah
+                    </span>
+
+                </div>
+
+
+
+                <!-- FOTO 3 -->
+
+                <div class="photo">
+
+                    <img
+                        src="3.jpeg"
+                        alt="Foto 3">
+
+                    <span>
+                        Cape tuh ikut lomba terus wkaoakwoa
+                    </span>
+
+                </div>
+
+
+
+                <!-- FOTO 4 -->
+
+                <div class="photo">
+
+                    <img
+                        src="4.jpeg"
+                        alt="Foto 4">
+
+                    <span>
+                        Ini siapanya MJ (Mulan Jameela)
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         4. BIRTHDAY WISHES
+         
+         TEKSNYA BEBAS KAMU UBAH
+         ===================================================== -->
+
+    <section>
+
+        <div class="wrap">
+
+
+            <div class="title">
+
+                <h2>
+                    Birthday wishes 🌟
+                </h2>
+
+                <p>
+                    Semoga umur 18 ini jadi makin dewasa dan ga gampang nangis yaa..
+                </p>
+
+            </div>
+
+
+
+            <div class="wishes">
+
+
+                <!-- WISH 1 -->
+
+                <div class="wish">
+
+                    <div class="icon">
+                        💰
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Cepet Sukses dan Kaya
+                        </h3>
+
+                        <p>
+
+                            Semoga nanti Bisnisnya cepet Sukses yaa 
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WISH 2 -->
+
+                <div class="wish">
+
+                    <div class="icon">
+                        🤑
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Bisa Beliin guwe apa kek gitu
+                        </h3>
+
+                        <p>
+
+                            Ya kan kalo uda kaya mah gw minta Iphone juga kecil ye gak
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WISH 3 -->
+
+                <div class="wish">
+
+                    <div class="icon">
+                        🥰
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Lebih Tahan Mental
+                        </h3>
+
+                        <p>
+
+                            Bos, di Kuliah ini emg lebih berat drpd SMA ya... kalo sama bu Gres ada lu nangis
+                            di sini semoga ngga dah
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WISH 4 -->
+
+                <div class="wish">
+
+                    <div class="icon">
+                        💖
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Jaga Bapak lu bener bener ya...
+                        </h3>
+
+                        <p>
+
+                            Semoga makin jarang berantem sama om Ihiow ya kay, akur akur aja dah
+                            gw paham soalnya gimana rasanya kalo punya orang tua tinggal 1.....
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         5. PENUTUP
+         ===================================================== -->
+
+    <section class="final">
+
+        <div class="wrap">
+
+
+            <div class="card">
+
+
+                <h2>
+
+                    Last Pisan ini mah Kay...
+
+                </h2>
+
+
+                <p>
+
+                   Semoga di 2026 dan 2027 nanti semuanya bisa berjalan dengan baik yaa, jangan lupa selalu
+                   nimbrung di grup biar fekandra ttp stay ber 6 selalu #cihuyyy
+
+                </p>
+
+
+                <button
+                    class="btn"
+                    onclick="secret()">
+
+                    Ada satu pesan lagi 👀
+
+                </button>
+
+
+                <div id="secret">
+
+                    🎁 Cilukkk Baaa,
+                        Jangan Lupa Senyum dan Haha Hihi terus yaa biar ga strezz
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        - Darryl Herianto Ketua Kelas Idaman 😎 -
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         Bagian ini mengatur tombol dan animasi.
+         ===================================================== -->
+
+    <script>
+
+
+        /* =================================================
+           TOMBOL "BUKA KEJUTAN"
+           ================================================= */
+
+        function surprise() {
+
+            window.scrollTo({
+
+                top: window.innerHeight,
+
+                behavior: 'smooth'
+
+            });
+
+
+            confetti();
+
+        }
+
+
+
+        /* =================================================
+           PESAN RAHASIA
+           ================================================= */
+
+        function secret() {
+
+            document
+                .getElementById('secret')
+                .style.display = 'block';
+
+        }
+
+
+
+        /* =================================================
+           ANIMASI CONFETTI
+           ================================================= */
+
+        function confetti() {
+
+
+            const emojis = [
+
+                '✨',
+                '💖',
+                '🌈',
+                '⭐',
+                '🦄',
+                '🌸'
+
+            ];
+
+
+            for (
+                let i = 0;
+                i < 35;
+                i++
+            ) {
+
+
+                const e =
+                    document.createElement('div');
+
+
+                e.textContent =
+                    emojis[
+                        Math.floor(
+                            Math.random()
+                            * emojis.length
+                        )
+                    ];
+
+
+                e.style.position =
+                    'fixed';
+
+
+                e.style.left =
+                    Math.random()
+                    * 100
+                    + 'vw';
+
+
+                e.style.top =
+                    '-30px';
+
+
+                e.style.fontSize =
+                    (
+                        14
+                        +
+                        Math.random()
+                        * 18
+                    )
+                    + 'px';
+
+
+                e.style.zIndex = 99;
+
+
+                e.style.transition =
+                    'transform 2.2s linear, opacity 2.2s linear';
+
+
+                document.body
+                    .appendChild(e);
+
+
+                requestAnimationFrame(() => {
+
+
+                    e.style.transform =
+                        'translateY('
+                        +
+                        (
+                            window.innerHeight
+                            + 80
+                        )
+                        +
+                        'px) rotate('
+                        +
+                        (
+                            Math.random()
+                            * 600
+                            - 300
+                        )
+                        +
+                        'deg)';
+
+
+                    e.style.opacity = 0;
+
+
+                });
+
+
+                setTimeout(() => {
+
+                    e.remove();
+
+                }, 2400);
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
